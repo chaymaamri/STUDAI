@@ -1,0 +1,37 @@
+.textup-container {
+    margin-top: 200px; /* Ajustez la valeur selon vos besoins */
+}
+
+.texte {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.9rem;
+    font-weight: 700;
+    background: linear-gradient(45deg, #ff6f61, #42a5f5, #66bb6a, #ffeb3b);
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.image {
+    width: 120px;
+    height: auto;
+    animation: imageMove 2s infinite alternate;
+}
+
+@keyframes imageMove {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}

@@ -1,0 +1,45 @@
+/* Appliquez la police Lora à tous les éléments */
+
+body{
+    height: 100vh; 
+    background: radial-gradient(circle, #b6d1fad0, #ffffff);
+    padding: 20px;
+    font-family: 'lora';
+}
+
+.custom-navbar{
+  padding: 10px;
+  margin: 15px;
+  border: 0px solid;
+  border-radius: 20px;  
+  background-color: rgba(115, 177, 240, 0.575) !important;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 3px 8px 0px, rgba(0, 0, 0, 0.04) 0px 14px 14px 0px, rgba(0, 0, 0, 0.03) 0px 31px 19px 0px, rgba(0, 0, 0, 0.01) 0px 56px 22px 0px, rgba(0, 0, 0, 0) 0px 87px 24px 0px;  
+}
+
+.text{
+  font-size: 1.5rem;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:50vh;
+  text-align: center;
+}
+
+/* Custom scrollbar styles */
+::-webkit-scrollbar {
+  width: 4px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Background of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #add8e6; /* Light blue color for the scrollbar thumb */
+  border-radius: 10px; /* Rounded corners for the scrollbar thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #87ceeb; /* Slightly darker light blue color for the scrollbar thumb on hover */
+}

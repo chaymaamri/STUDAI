@@ -1,0 +1,167 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Fancy text animation */
+.text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    background: linear-gradient(45deg, #ff6f61, #42a5f5, #66bb6a, #ffeb3b);
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: colorChange 10s ease infinite, textSizeChange 10s ease infinite;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.feature-image {
+    width: 60px; /* Ajuste la largeur selon tes besoins */
+    height: auto; /* Garde les proportions */
+    object-fit: contain; /* Ajuste l'image pour qu'elle reste bien cadrée */
+  }
+/* Keyframes for color change animation */
+@keyframes colorChange {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Keyframes for text size change animation */
+@keyframes textSizeChange {
+    0%, 100% {
+        font-size: 3.5rem;
+    }
+    50% {
+        font-size: 3.75rem;
+    }
+}
+
+/* Container for images and text */
+.image-text-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Image styles */
+.image-text-container img {
+    width: 120px;
+    height: auto;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .text {
+        font-size: 1rem;
+    }
+
+    @keyframes textSizeChange {
+        0%, 100% {
+            font-size: 1rem;
+        }
+        50% {
+            font-size: 1.25rem;
+        }
+    }
+
+    .image-text-container img {
+        width: 50px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    .text {
+        font-size: 1.25rem;
+    }
+
+    @keyframes textSizeChange {
+        0%, 100% {
+            font-size: 1.25rem;
+        }
+        50% {
+            font-size: 1.5rem;
+        }
+    }
+
+    .image-text-container img {
+        width: 40px;
+    }
+}
+/* From Uiverse.io by satyamchaudharydev */ 
+.button {
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    padding-block: 0.5rem;
+    padding-inline: 1.25rem;
+    background-color: rgb(0 107 179);
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffff;
+    gap: 10px;
+    font-weight: bold;
+    border: 3px solid #ffffff4d;
+    outline: none;
+    overflow: hidden;
+    font-size: 15px;
+    cursor: pointer;
+  }
+  
+  .icon {
+    width: 24px;
+    height: 24px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .button:hover {
+    transform: scale(1.05);
+    border-color: #fff9;
+  }
+  
+  .button:hover .icon {
+    transform: translate(4px);
+  }
+  
+  .button:hover::before {
+    animation: shine 1.5s ease-out infinite;
+  }
+  
+  .button::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    background-image: linear-gradient(
+      120deg,
+      rgba(255, 255, 255, 0) 30%,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0) 70%
+    );
+    top: 0;
+    left: -100px;
+    opacity: 0.6;
+  }
+  
+  @keyframes shine {
+    0% {
+      left: -100px;
+    }
+  
+    60% {
+      left: 100%;
+    }
+  
+    to {
+      left: 100%;
+    }
+  }
+  
